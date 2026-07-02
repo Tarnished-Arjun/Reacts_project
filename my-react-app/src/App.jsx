@@ -6,6 +6,7 @@ import './App.css'
 import Header from "./Header";
 import Student from "./Student";
 import Skills from "./Skills";
+import Counter from "./Counter";
 
 
 function App() {
@@ -46,6 +47,7 @@ function greet() {
 
       <Student />
       <Skills skills={skills} />
+      <Counter />
     </>
   );
 }
