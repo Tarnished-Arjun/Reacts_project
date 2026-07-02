@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Header from "./Header";
 import Student from "./Student";
+import Skills from "./Skills";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 function greet() {
     return "Good Morning";
   }
+  const skills = ["React", "Java", "SQL", "HTML"];
 
   return (
     <>
@@ -43,6 +45,7 @@ function greet() {
       <h2>Student Age: {student.age}</h2>
 
       <Student />
+      <Skills skills={skills} />
     </>
   );
 }
