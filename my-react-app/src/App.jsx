@@ -8,6 +8,7 @@ import Student from "./Student";
 import Skills from "./Skills";
 import Counter from "./Counter";
 import Toggle from "./Toggle";
+import Todo from "./Todo";
 
 
 function App() {
@@ -50,6 +51,7 @@ function greet() {
       <Skills skills={skills} />
       <Counter />
        <Toggle />
+      <Todo /> 
     </>
   );
 }
