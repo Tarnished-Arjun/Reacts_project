@@ -10,6 +10,8 @@ import Counter from "./Counter";
 import Toggle from "./Toggle";
 import Todo from "./Todo";
 import Users from "./Users";
+import CounterTitle from "./CounterTitle";
+import Clock from "./Clock";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -53,6 +55,9 @@ function greet() {
        <Toggle />
       <Todo /> 
       <Users />
+      <CounterTitle />
+      <Clock />
+
     </>
   );
 }
