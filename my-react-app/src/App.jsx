@@ -9,7 +9,7 @@ import Skills from "./Skills";
 import Counter from "./Counter";
 import Toggle from "./Toggle";
 import Todo from "./Todo";
-
+import Users from "./Users";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +52,7 @@ function greet() {
       <Counter />
        <Toggle />
       <Todo /> 
+      <Users />
     </>
   );
 }
