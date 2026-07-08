@@ -12,6 +12,10 @@ import Todo from "./Todo";
 import Users from "./Users";
 import CounterTitle from "./CounterTitle";
 import Clock from "./Clock";
+import Login from "./Login";
+import NumberDisplay from "./NumberDisplay";
+import { NumberContext } from "./NumberContext";
+import Library from "./Library";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -57,6 +61,11 @@ function greet() {
       <Users />
       <CounterTitle />
       <Clock />
+      <Login />
+      <NumberContext.Provider value={100}>
+       <NumberDisplay />
+      </NumberContext.Provider>
+      <Library />
 
     </>
   );
