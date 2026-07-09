@@ -16,6 +16,9 @@ import Login from "./Login";
 import NumberDisplay from "./NumberDisplay";
 import { NumberContext } from "./NumberContext";
 import Library from "./Library";
+import Home1 from "./Home1";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -66,6 +69,23 @@ function greet() {
        <NumberDisplay />
       </NumberContext.Provider>
       <Library />
+      <BrowserRouter>
+
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/about">About</Link> |{" "}
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+    </BrowserRouter>
 
     </>
   );
