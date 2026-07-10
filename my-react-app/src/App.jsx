@@ -16,9 +16,18 @@ import Login from "./Login";
 import NumberDisplay from "./NumberDisplay";
 import { NumberContext } from "./NumberContext";
 import Library from "./Library";
-import Home1 from "./Home1";
+import Home from "./Home1";
 import About from "./About";
 import Contact from "./Contact";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Home from "./Home2";
+import Register from "./Register";
+import Success from "./Success";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -85,6 +94,15 @@ function greet() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
+    </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/success" element={<Success />} />
+      </Routes>
     </BrowserRouter>
 
     </>
